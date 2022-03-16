@@ -1,0 +1,86 @@
+AlertDialog 기본 요소
+
+- 빌더 생성하기
+val builder = AlertDialog.Builder(Context)
+변수 계속 생성하지 않으면 똑같은 알림창을 수정하게 된다.
+여러 개를 나타내기 위해서는 해당하는 함수에서 변수 생성해서 초기화 해주기
+
+- Alert(알림창)의 기본요소
+===========================
+                            => 머리 부분 (setTitle()과 같은 제목이 들어감)
+===========================
+
+                            => 몸 부분 (setMessage(), setItems()... 과 같은 내용들이 들어감.)
+                                * 복수형태로 몸 부분의 여러 개 메소드를 사용하지 말 것
+===========================
+                            => 다리 부분 (setPositiveButton() 과 같은 버튼이 들어감.)
+===========================
+
+- 빌더 사용하기
+1) 기본적인 제목과 내용
+builder
+    .setTitle() : 제목
+    .setMessage() : 내용
+    .create() : 생성
+    .show() : 보여주기
+
+create() 와 show() 한 몸이라고 생각하고 끝에 꼭 작성해줘야 한다.
+
+2) 3개의 기본적인 버튼
+builder
+    .setTitle()
+    .setMessage()
+    .setPositiveButton(String, DialogInterface.OnClickListener{})
+    .setNegativeButton(String, DialogInterface.OnClickListener{})
+    .setNeutralButton(String, DialogInterface.OnClickListener{})
+    .create()
+    .show()
+
+첫 번째 인자는 알림창에서 보여지는 텍스트
+두 번째 인자는 해당 버튼 클릭 후 어떠한 실행을 할 것인지
+
+3) 리스트(목록) 가져오기
+builder
+    .setTitle()
+    .setItems(Array, DialogInterface.OnClickListener{})
+    .create()
+    .show()
+
+Array의 해당하는 리스트들을 뽑아와서 목록으로 보여준다.
+
+4) 체크박스 : 복수 선택 불가능
+builder
+    .setTitle()
+    .setMultiChoiceItems(Array, BooleanArray=null, DialogInterface.OnClickListener{})
+    .create()
+    .show()
+
+첫 번째 인자의 배열로 목록을 나열할 수 있다.
+두 번째 인자로 선택될 아이템의 체크되어 있게 할 수 있다. booleanArray 타입
+    null -> 선택 x
+    3개 리스트 : booleanArray(true,false,true) => 1,3 번째 리스트 선택
+    3개 리스트인데, 3개의 인자를 갖는 booleanArray를 해야함 적거나 크면 오류
+세 번째 인자로 클릭 시 실행
+
+5) 라디오버튼 : 복수 선택 가능
+builder
+    .setTitle()
+    .setSingleChoiceItems(Array, BooleanArray=0, DialogInterface.OnClickListener{})
+    .create()
+    .show()
+
+첫 번째 인자의 배열로 목록을 나열할 수 있다.
+두 번째 인자로 선택될 아이템의 체크되어 있게 할 수 있다. (0 -> 0번째 아이템 체크) Int 타입
+    null 은 받지 못함
+    0,1,.. 숫자 정하기
+    3개의 리스트를 나타낼 때, 0~2까지 인덱스를 가지고 있음. 벗어나면 오류는 안나지만 체크되지않음
+세 번째 인자로 클릭 시 실행
+
+
+5) 커스텀
+builder
+    .setTitle()
+    .
+    .create()
+    .show()
+

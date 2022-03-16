@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Goni Study</string>
+
+    <string-array name="TEST">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+        <item>test4</item>
+    </string-array>
+</resources>
