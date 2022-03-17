@@ -4,6 +4,7 @@ import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.databinding.DataBindingUtil
@@ -45,6 +46,7 @@ class AlertActivity : AppCompatActivity() {
                 .setNeutralButton("Neutral", object: DialogInterface.OnClickListener{
                     override fun onClick(p0: DialogInterface?, p1: Int) {
                         Toast.makeText(applicationContext,"Neutral", Toast.LENGTH_SHORT).show()
+                        application
                     }
                 })
                 .create()
@@ -53,6 +55,7 @@ class AlertActivity : AppCompatActivity() {
 
         binding.alertBtn3.setOnClickListener {
             val builder = AlertDialog.Builder(this)
+            arrayListOf<String>()
             builder
                 .setTitle("test title")
                 .setItems(R.array.TEST, object: DialogInterface.OnClickListener{
@@ -93,6 +96,16 @@ class AlertActivity : AppCompatActivity() {
                         Log.d("testing","setSingleChoiceItems item : ${items[p1]}")
                     }
                 })
+                .create()
+                .show()
+        }
+
+        val alertBtn6 = findViewById<Button>(R.id.alert_btn6)
+        alertBtn6.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder
+                .setTitle("hi")
+                .setView(R.layout.activity_alert_custom)
                 .create()
                 .show()
         }

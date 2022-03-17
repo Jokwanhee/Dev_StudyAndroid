@@ -80,7 +80,9 @@ builder
 5) 커스텀
 builder
     .setTitle()
-    .
+    .setView(layoutResId)
     .create()
     .show()
 
+layout 파일의 전체를 가져온다. 전체 ViewGroup을 match parent가 아닌 wrap content로 설정해야
+형식이 깨지지 않고 잘 들어감을 알 수 있다.
