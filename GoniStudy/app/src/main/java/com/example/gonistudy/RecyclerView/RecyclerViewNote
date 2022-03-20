@@ -1,0 +1,15 @@
+https://developer.android.com/guide/topics/ui/layout/recyclerview?hl=ko
+
+RecyclerView를 사용하면 대량의 데이터 세트를 효율적을 사용할 수 있다.
+항목이 스크롤되어 화면에서 벗어나더라도 RecyclerView는 뷰를 제거하지 않습니다
+RecyclerView는 화면에서 스크롤된 새 항목의 뷰를 재사용합니다.
+이렇게 뷰를 재사용하면 앱의 응답성을 개선하고 전력 소모를 줄이기 때문에 성능이 개선됩니다.
+
+
+onCreateViewHolder() :RecyclerView는 ViewHolder를 새로 만들어야 할 때마다 이 메서드를 호출합니다.
+                 이 메서드는 ViewHolder와 그에 연결된 View를 생성하고 초기화하지만 뷰의 콘텐츠를 채우지는 않습니다.
+
+onBindViewHolder() : 이 메서드는 적절한 데이터를 가져와서 그 데이터를 사용하여 뷰 홀더의 레이아웃을 채웁니다.
+
+getItemCount() : 데이터 세트 크기를 가져올 때 이 메서드를 호출합니다.
+                 예를 들어 주소록 앱에서는 총 주소 개수가 여기에 해당할 수 있습니다.
