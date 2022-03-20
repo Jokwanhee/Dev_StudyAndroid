@@ -1,0 +1,19 @@
+https://developer.android.com/guide/topics/ui/notifiers/notifications
+
+Oreo Notification(8.0)과 이전 버전의 Notification 차이
+
+Android 8.0(API 수준 26)부터는 모든 알림을 채널에 할당해야 합니다.
+채널마다 채널의 모든 알림에 적용되는 시각적/음향적 동작을 설정할 수 있습니다.
+그런 다음 사용자는 이 설정을 변경하고 앱에서 차단하거나 표시해야 하는 알림 채널을 결정할 수 있습니다.
+
+Notification : 알림
+상단 상태표시줄의 아이콘 생성
+스와이프로 알림 확인 가능
+헤드업 알림으로 알림을 간략히 표시(핸드폰 잠금 해제 시)
+안드로이드 5.0(롤리팝) 부터 잠금화면에 알림 표시 가능
+
+알림 콘텐츠 설정
+NotificationCompat.Builder 객체를 사용하여 알림 콘테츠와 채널을 설정할 수 있다.
+    .setContentTitle(textTitle)
+    .setContentText(textContent)
+    .setSmallIcon(R.drawable.)
