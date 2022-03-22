@@ -10,7 +10,7 @@ import com.example.gonistudy.R
 class RecyclerViewAdapter(
     private val items:List<RecyclerViewData>
 ):RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
-    inner class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
+    class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
         val name = itemView.findViewById<TextView>(R.id.name_text_view)
         val hobby = itemView.findViewById<TextView>(R.id.hobby_text_view)
         val age = itemView.findViewById<TextView>(R.id.age_text_view)
