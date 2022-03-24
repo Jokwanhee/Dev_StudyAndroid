@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Goni Study</string>
-
+    <string name="radio_group">radioGroup</string>
+    <string name="radio_btn_1">radioBtn1</string>
+    <string name="radio_btn_2">radioBtn2</string>
+    <string name="radio_btn_3">radioBtn3</string>
+    <string name="check_box_1">checkBox1</string>
+    <string name="check_box_2">checkBox2</string>
+    <string name="check_box_3">checkBox3</string>
+    <string name="downloading">downloading...</string>
     <string-array name="TEST">
         <item>test1</item>
         <item>test2</item>

@@ -1,0 +1,36 @@
+
+# 지연초기화
+메모리의 낭비를 막기위해 사용한다.
+예를 들어서,
+class 내부에서 name:String 이라는 변수를 만든다.
+val name:String = "jo" 라고 만들었을 때, 이 name 은 계속 String 타입으로 jo라는 객체라는 메모리를 차지하는 곳을
+보고 있게 된다. 이것은 클래스 내부에서 여러 함수가 생성이 되었을 때에도 메모리 차지를 할 수 있다.
+그렇기 때문에 우리는 지연초기화로 메모리 낭비를 막을 수 있다.
+
+(1) lateinit [ lateinit var 변수명:변수타입 ]
+    : 주로 클래스를 사용하기 위해서 사용한다.
+        int, float 사용 x
+        String 사용 o
+    ex)
+        class Main{
+            lateinit var P:Person
+
+            fun a(){
+                P = Person()
+            }
+        }
+        class Person{}
+
+
+
+(2) lazy [ val 변수명 by lazy {변수에 들어갈 클래스 생성자 또는 값} ]
+        int, float 사용 o
+
+    ex) view binding
+        val binding by lazy {
+            ActivityMainBinding.inflate(layoutInflater)
+        }
+
+* 차이점
+    : lateinit은 변수를 바꿀 때 사용할 수 있다.
+      lazy는 변수를 바꾸지 않을 때 사용할 수 있다.

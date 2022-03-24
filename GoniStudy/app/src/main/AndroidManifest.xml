@@ -10,9 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".ListViewUpgrade.ListActivity2"
-            android:exported="true"
-            android:windowSoftInputMode="stateAlwaysHidden">
+            android:name=".Widget.WidgetActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +19,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".RecyclerView.RecyclerViewActivity"
+            android:name=".ViewBinding.ViewBindingActivity"
             android:exported="true">
         </activity>
         <activity
+            android:name=".Camera.CameraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerViewUpgrade.RecyclerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListViewUpgrade.ListActivity2"
+            android:exported="true"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".RecyclerView.RecyclerViewActivity"
+            android:exported="true" />
+        <activity
             android:name=".ListView.ListActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Notification.NotificationActivity"
             android:exported="true" />
