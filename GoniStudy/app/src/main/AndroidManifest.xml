@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Widget.WidgetActivity"
+            android:name=".Spinner.SpinnerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,9 +19,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewBinding.ViewBindingActivity"
+            android:name=".Activity.SubActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PracticeActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity
+            android:name=".Widget.WidgetActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ViewBinding.ViewBindingActivity"
+            android:exported="true" />
         <activity
             android:name=".Camera.CameraActivity"
             android:exported="true" />
@@ -31,7 +45,7 @@
         <activity
             android:name=".ListViewUpgrade.ListActivity2"
             android:exported="true"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name=".RecyclerView.RecyclerViewActivity"
             android:exported="true" />
