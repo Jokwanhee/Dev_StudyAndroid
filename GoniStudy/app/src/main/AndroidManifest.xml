@@ -10,37 +10,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Spinner.SpinnerActivity"
-            android:exported="true">
+            android:name=".CustomWidget.CustomWidgetActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".CustomView.CustomViewActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Fragment.Data.FragmentActivity2"
+            android:exported="true"></activity>
+        <activity
+            android:name=".Fragment.FragmentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RecyclerView.Test.RecyclerViewActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".Spinner.SpinnerActivity"
+            android:exported="true" />
         <activity
             android:name=".Activity.SubActivity"
             android:exported="true" />
         <activity
             android:name=".Activity.PracticeActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Widget.WidgetActivity"
             android:exported="true" />
         <activity
             android:name=".ViewBinding.ViewBindingActivity"
-            android:exported="true" />
-        <activity
-            android:name=".Camera.CameraActivity"
-            android:exported="true" />
-        <activity
-            android:name=".RecyclerViewUpgrade.RecyclerActivity"
             android:exported="true" />
         <activity
             android:name=".ListViewUpgrade.ListActivity2"
