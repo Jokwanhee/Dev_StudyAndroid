@@ -25,6 +25,7 @@
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/activity_spinner.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/activity_sub.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/activity_view_binding.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/activity_view_pager.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/activity_widget.xml" value="0.264" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/custom_alert_list.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/fragment_detail.xml" value="0.25364583333333335" />
@@ -36,6 +37,10 @@
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/item_recycler.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/item_view_01.xml" value="0.4" />
         <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/item_view_02.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/page_a_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/page_b_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/page_c_fragment.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/LG/Desktop/Dev_StudyAndroid/GoniStudy/app/src/main/res/layout/page_d_fragment.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>
