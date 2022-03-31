@@ -1,11 +1,10 @@
-package com.example.gonistudy.ViewPager
+package com.example.gonistudy.ViewPager_Fragment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.gonistudy.R
 import com.example.gonistudy.databinding.ActivityViewPagerBinding
 import com.google.android.material.tabs.TabLayoutMediator
 

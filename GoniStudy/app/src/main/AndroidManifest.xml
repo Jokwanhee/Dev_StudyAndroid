@@ -10,8 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".ViewPager.ViewPagerActivity"
-            android:exported="true">
+            android:name=".ViewPager_RecyclerView.ViewPagerRecyclerActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,12 +19,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".CustomWidget.CustomWidgetActivity"
+            android:name=".ViewPager_Fragment.ViewPagerActivity"
             android:exported="true">
         </activity>
         <activity
+            android:name=".CustomWidget.CustomWidgetActivity"
+            android:exported="true" />
+        <activity
             android:name=".CustomView.CustomViewActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Fragment.Data.FragmentActivity2"
             android:exported="true" />
