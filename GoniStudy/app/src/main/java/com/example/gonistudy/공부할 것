@@ -1,3 +1,5 @@
+* Dagger Hilt 안드로이드 의존성 주입
+https://0391kjy.tistory.com/55
 
 * 안드로이드 앱에 Koin으로 DI 적용하기
 https://spoqa.github.io/2020/11/02/android-dependency-injection-with-koin.html
@@ -7,6 +9,14 @@ https://medium.com/@maryangmin/di-%EA%B8%B0%EB%B3%B8%EA%B0%9C%EB%85%90%EB%B6%80%
 
 * hilt
 https://developer88.tistory.com/349
+
+1) 의존성 주입
+의존성 주입 : 클래스 외부에서 객체를 생성하여 주입하는 것
+
+2) Dagger Hilt
+인스턴스를 클래스 외부에서 주입하기 위해서는 인스턴스에 대한 생명주기(생성~소멸)의 관리가 필요
+=> 이를 자동으로 관리해주기 위해서 2020년 6월 안드로이드 전용 DI(Dependency Injection) 라이브러리 인
+'Dagger Hilt' 발표
 
 의존성 주입
 dagger
