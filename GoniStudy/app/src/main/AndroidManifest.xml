@@ -8,6 +8,7 @@
                    (개인정보와 관련된 권한은 모두 위험권한)
     -->
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -17,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Permission.PermissionActivity"
+            android:name=".BaseActivity.MainBaseActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,12 +27,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewPager_RecyclerView.ViewPagerRecyclerActivity"
+            android:name=".Permission.PermissionActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".ViewPager_Fragment.ViewPagerActivity"
+            android:name=".ViewPager_RecyclerView.ViewPagerRecyclerActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".ViewPager_Fragment.ViewPagerActivity"
+            android:exported="true" />
         <activity
             android:name=".CustomWidget.CustomWidgetActivity"
             android:exported="true" />
