@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".File_IO.FileMainActivity">
+    
+    <TextView
+        android:id="@+id/top_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="파일 입출력"
+        android:textSize="30dp"
+        android:ellipsize="end"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/read_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="파일 읽기"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/top_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/write_text_view"/>
+
+    <EditText
+        android:id="@+id/write_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="파일 쓰기"
+        android:textSize="20dp"
+        android:inputType="text|text|textMultiLine"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/read_text_view"
+        app:layout_constraintBottom_toTopOf="@+id/assign_button"/>
+
+    <Button
+        android:id="@+id/assign_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_text_view"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
