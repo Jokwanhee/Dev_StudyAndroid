@@ -1,0 +1,12 @@
+
+abstract class는 그 자체로 인스턴스화 할 수 없다.
+
+즉,
+abstract class Person(){}
+p = Person() ---- (X)
+
+하지만
+상속은 가능하다.
+class Children(): Person() ---- (O)
+
+abstract class는 절대로 바뀌지 않는 개념에 대한 공통 부분을 만들 때 유용한 도구!

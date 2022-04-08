@@ -7,7 +7,7 @@ import android.provider.MediaStore
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 
-// abstract -> 추상화 : 다른 클래스에서 상속을 할 수 있다. 하지만 인스턴스화 할 수 없다.
+// abstract class -> 추상화 : 다른 클래스에서 상속을 할 수 있다. 하지만 인스턴스화 할 수 없다.
 // open
 
 

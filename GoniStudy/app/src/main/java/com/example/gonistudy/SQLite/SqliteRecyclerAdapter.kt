@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gonistudy.R
-import java.text.SimpleDateFormat
 
 class SqliteRecyclerAdapter(
     val items: List<Memo>

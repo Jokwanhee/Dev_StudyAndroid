@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".SQLite.SQLiteMainActivity"
+            android:name=".Room.RoomMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,15 +27,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SharedPreference.SharedPreferenceMainActivity"
+            android:name=".SQLite.SQLiteMainActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".File_IO.FileMainActivity"
+            android:name=".SharedPreference.SharedPreferenceMainActivity"
             android:exported="true"></activity>
         <activity
+            android:name=".File_IO.FileMainActivity"
+            android:exported="true" />
+        <activity
             android:name=".BaseActivity.MainBaseActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".Permission.PermissionActivity"
             android:exported="true" />

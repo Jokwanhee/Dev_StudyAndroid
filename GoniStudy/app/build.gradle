@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -40,6 +41,13 @@ dependencies {
     // Fragment
     // https://developer.android.com/jetpack/androidx/releases/fragment?hl=ko#1.3.0-alpha04
     implementation("androidx.fragment:fragment-ktx:1.4.1")
+
+    // Room 데이터베이스
+    // https://developer.android.com/jetpack/androidx/releases/room?hl=ko#kts
+    def roomVersion = "2.4.2"
+    implementation "androidx.room:room-runtime:$roomVersion"
+    implementation "androidx.room:room-ktx:$roomVersion"
+    kapt"androidx.room:room-compiler:$roomVersion"
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
