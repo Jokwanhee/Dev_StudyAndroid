@@ -4,11 +4,14 @@
     <!-- 일반권한 : 매니페스트에 작성하는 것만으로도 사용할 수 있다. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!--
- 위험권한 : 매니페스트에도 명세하고 코드에서도 작성해야 한다.
+         위험권한 : 매니페스트에도 명세하고 코드에서도 작성해야 한다.
                    (개인정보와 관련된 권한은 모두 위험권한)
     -->
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera2"/>
 
     <application
         android:allowBackup="true"
@@ -18,8 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Room.RoomMainActivity"
-            android:exported="true">
+            android:name=".Camera.CameraMainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,12 +30,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SQLite.SQLiteMainActivity"
+            android:name=".Room.RoomMainActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".SharedPreference.SharedPreferenceMainActivity"
+            android:name=".SQLite.SQLiteMainActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".SharedPreference.SharedPreferenceMainActivity"
+            android:exported="true" />
         <activity
             android:name=".File_IO.FileMainActivity"
             android:exported="true" />
