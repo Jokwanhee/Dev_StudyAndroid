@@ -21,8 +21,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Alert.Custom.CustomMainActivity"
-            android:exported="true" >
+            android:name=".SnackBar.SnackBarMainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,12 +30,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Coroutine.CoroutineMainActivity"
+            android:name=".Alert.Custom.CustomMainActivity"
             android:exported="true">
         </activity>
         <activity
-            android:name=".Thread.ThreadMainActivity"
+            android:name=".Coroutine.CoroutineMainActivity"
             android:exported="true"></activity>
+        <activity
+            android:name=".Thread.ThreadMainActivity"
+            android:exported="true" />
         <activity
             android:name=".Camera.CameraMainActivity"
             android:exported="true" />
