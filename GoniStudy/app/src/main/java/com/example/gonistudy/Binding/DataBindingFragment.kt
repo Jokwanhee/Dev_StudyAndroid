@@ -20,6 +20,6 @@ class DataBindingFragment:Fragment() {
     ): View? {
         binding = DataBindingUtil
             .inflate(inflater, R.layout.fragment_test, container, false)
-        return super.onCreateView(binding.root)
+        return binding.root
     }
 }
