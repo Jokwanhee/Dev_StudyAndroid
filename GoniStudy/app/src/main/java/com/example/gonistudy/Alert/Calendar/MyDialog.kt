@@ -18,7 +18,7 @@ class MyDialog(
 
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->
             dayString = "${year}-${month}-${dayOfMonth}"
-            dismiss()x
+            dismiss()
         }
     }
 }

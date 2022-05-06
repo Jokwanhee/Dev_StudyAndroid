@@ -1,0 +1,10 @@
+https://fre2-dom.tistory.com/134?category=949323
+
+
+
+- gradle 설정
+implementation 'com.google.android.gms:play-services-location:18.0.0'
+
+- 권한 추가
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.gonistudy" >
+    package="com.example.gonistudy">
     <!-- 일반권한 : 매니페스트에 작성하는 것만으로도 사용할 수 있다. -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!--
@@ -11,7 +11,18 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+    <!-- GPS  -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-feature android:name="android.hardware.camera2" />
+
+
+<!--    <intent-filter>-->
+<!--        <action android:name="android.intent.action.MAIN" />-->
+
+<!--        <category android:name="android.intent.category.LAUNCHER" />-->
+<!--    </intent-filter>-->
 
     <application
         android:allowBackup="true"
@@ -19,10 +30,15 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.GoniStudy" >
+        android:theme="@style/Theme.GoniStudy">
         <activity
-            android:name=".Alert.Calendar.CalendarViewMainActivity"
-            android:exported="true">
+            android:name=".GPS.GPSMainActivity"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".WeatherAPI.WeatherMainActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,10 +46,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".SnackBar.SnackBarMainActivity"
-            android:exported="true" >
+            android:name=".Alert.Calendar.CalendarViewMainActivity"
+            android:exported="true">
 
         </activity>
+        <activity
+            android:name=".SnackBar.SnackBarMainActivity"
+            android:exported="true" />
         <activity
             android:name=".Alert.Custom.CustomMainActivity"
             android:exported="true" />
@@ -72,7 +91,8 @@
             android:exported="true" />
         <activity
             android:name=".CustomWidget.CustomWidgetActivity"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".CustomView.CustomViewActivity"
             android:exported="true" />
@@ -96,7 +116,9 @@
             android:exported="true" />
         <activity
             android:name=".Widget.WidgetActivity"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".ViewBinding.ViewBindingActivity"
             android:exported="true" />

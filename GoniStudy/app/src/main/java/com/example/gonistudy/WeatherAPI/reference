@@ -1,0 +1,13 @@
+- 참고 블로그
+https://m.blog.naver.com/cosmosjs/221959349303
+- 날씨 API 주소
+https://home.openweathermap.org/
+
+- gradle 추가
+implementation 'com.google.android.gms:play-services-location:17.1.0'
+implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+
+- 위치 권한 추가
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
