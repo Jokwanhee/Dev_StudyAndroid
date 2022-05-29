@@ -1,0 +1,2 @@
+com/goni99/asynctask/BuildConfig.java
+ com.goni99.asynctask.BuildConfig

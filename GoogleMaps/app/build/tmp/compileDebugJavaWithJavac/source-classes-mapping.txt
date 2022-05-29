@@ -1,0 +1,2 @@
+com/goni99/googlemaps/BuildConfig.java
+ com.goni99.googlemaps.BuildConfig
