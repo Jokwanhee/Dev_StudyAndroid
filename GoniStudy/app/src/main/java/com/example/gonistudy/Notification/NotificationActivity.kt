@@ -40,6 +40,7 @@ class NotificationActivity : AppCompatActivity() {
                 .setContentIntent(pendingIntent)
                 // Android 7.1 이하를 지원하려면 아래에 표시된 대로 setPriority 설정해야 함
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setAutoCancel(true) // 알림 클릭 시 사라짐
             with(from(this@NotificationActivity)){
                 notify(NOTIFICATION_ID, builder.build())
             }
